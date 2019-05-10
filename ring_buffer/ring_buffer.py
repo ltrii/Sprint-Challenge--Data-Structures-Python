@@ -12,7 +12,7 @@ class RingBuffer:
     self.max += 1 if self.max < self.capacity else self.capacity
 
   def get(self):
-    if max < self.capacity:
+    if self.max < self.capacity:
       return self.storage[:self.max]
     else:
       return self.storage
