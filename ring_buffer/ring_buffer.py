@@ -3,6 +3,7 @@ class RingBuffer:
     self.capacity = capacity
     self.current = 0
     self.storage = [None]*capacity
+    self.max = 0
 
   def append(self, item):
     self.storage[self.current] = item
